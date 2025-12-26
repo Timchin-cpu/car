@@ -1,0 +1,418 @@
+.container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  width: 100%;
+  max-width: 100vw;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 100px;
+  width: 100vw;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backButton {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #111827;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Search Section */
+.searchSection {
+  background-color: #ffffff;
+  padding: 0 16px 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #f3f4f6;
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+.searchIcon {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #374151;
+  font-size: 16px;
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+.clearButton {
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.clearButton:hover {
+  background-color: #e5e7eb;
+}
+
+.filterButton {
+  background-color: #f3f4f6;
+  padding: 12px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.filterButton:hover {
+  background-color: #e5e7eb;
+}
+
+.filterButtonActive {
+  background-color: #fbbf24;
+  color: #111827;
+}
+
+/* Filters */
+.filtersContainer {
+  background-color: #ffffff;
+  padding: 0 16px 20px;
+  border-bottom: 1px solid #f3f4f6;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+.typeButtons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.typeButton {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f3f4f6;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.typeButton:hover {
+  background-color: #e5e7eb;
+}
+
+.typeButtonActive {
+  background-color: #fbbf24;
+  color: #111827;
+  font-weight: 600;
+}
+
+.rangeContainer {
+  padding: 8px 0;
+}
+
+.rangeSlider {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #e5e7eb;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.rangeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fbbf24;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.rangeSlider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fbbf24;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resetButton {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resetButton:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Content */
+.content {
+  padding: 20px 16px;
+}
+
+.resultsHeader {
+  margin-bottom: 16px;
+}
+
+.resultsTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+/* Car List */
+.carList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.carCard {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.carCard:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.carImageContainer {
+  background-color: #f3f4f6;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  position: relative;
+}
+
+.carImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ratingBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111827;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carInfo {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carDetails {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.carName {
+  font-weight: 600;
+  color: #111827;
+  font-size: 16px;
+  margin: 0 0 4px 0;
+}
+
+.carType {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0 0 8px 0;
+}
+
+.carPrice {
+  color: #111827;
+  margin: 0;
+}
+
+.priceAmount {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pricePeriod {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.viewButton {
+  width: 44px;
+  height: 44px;
+  background-color: #fbbf24;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #111827;
+  flex-shrink: 0;
+}
+
+.viewButton:hover {
+  background-color: #f59e0b;
+  transform: scale(1.05);
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.emptyIcon {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.emptyText {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Bottom Navigation */
+.bottomNav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.navButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  color: #9ca3af;
+}
+
+.navIcon:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.navIconActive {
+  background-color: #fbbf24;
+  color: #111827;
+}
+
+.navIconActive:hover {
+  background-color: #fbbf24;
+}
