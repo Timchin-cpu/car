@@ -26,41 +26,31 @@ export default function SearchPage() {
       id: 2,
       name: "Ferrari 488 GTB",
       brand: "Ferrari",
-      type: "Sports",
       price: 890,
       rating: 4.9,
+      type: "Sports",
       image:
-        "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=500&q=80",
+        "/car6.jfif",
     },
     {
       id: 3,
       name: "BMW X5 M50i",
       brand: "BMW",
-      type: "SUV",
       price: 520,
       rating: 4.7,
+      type: "SUV",
       image:
-        "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500&q=80",
+        "/car7.jfif",
     },
     {
       id: 4,
       name: "Tesla Model S Plaid",
       brand: "Tesla",
-      type: "Electric",
       price: 780,
       rating: 4.9,
+      type: "Electric",
       image:
-        "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80",
-    },
-    {
-      id: 5,
-      name: "Lamborghini Huracán",
-      brand: "Lamborghini",
-      type: "Luxury",
-      price: 1200,
-      rating: 5.0,
-      image:
-        "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500&q=80",
+        "/car8.jfif",
     },
   ];
 

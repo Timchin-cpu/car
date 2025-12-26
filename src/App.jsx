@@ -41,7 +41,7 @@ export default function CarRentalApp() {
       rating: 4.7,
       type: "SUV",
       image:
-        "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500&q=80",
+        "/car7.jfif",
     },
     {
       id: 4,
@@ -51,7 +51,7 @@ export default function CarRentalApp() {
       rating: 4.9,
       type: "Electric",
       image:
-        "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=500&q=80",
+        "/car8.jfif",
     },
   ];
 
