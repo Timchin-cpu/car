@@ -31,7 +31,7 @@ export default function CarRentalApp() {
       rating: 4.9,
       type: "Sports",
       image:
-        "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=500&q=80",
+        "/car6.jfif",
     },
     {
       id: 3,
