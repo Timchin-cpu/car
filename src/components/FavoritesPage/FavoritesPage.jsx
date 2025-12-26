@@ -15,6 +15,16 @@ export default function FavoritesPage() {
   const navigate = useNavigate();
   const [favorites, setFavorites] = useState([
     {
+  id: 1,
+  name: "Bugatti Chiron",
+  brand: "Bugatti",
+  price: 3000,
+  rating: 5.0,
+  type: "Hypercar",
+  image: "/car.jfif",
+},
+
+    {
       id: 2,
       name: "Ferrari 488 GTB",
       brand: "Ferrari",
@@ -44,6 +54,23 @@ export default function FavoritesPage() {
       image:
         "/car8.jfif",
     },
+    {
+  id: 5,
+  name: "Mercedes-AMG GT R",
+  brand: "Mercedes-Benz",
+  price: 200,
+  rating: 4.8,
+  type: "Sports",
+  image: "/car2.jfif",
+},{
+  id: 3,
+  name: "Porsche 911 GT3",
+  brand: "Porsche",
+  price: 220,
+  rating: 4.9,
+  type: "Sports",
+  image: "/car3.jfif",
+}
   ]);
 
   const handleRemoveFavorite = (id) => {
