@@ -95,7 +95,7 @@ export default function CarRentalApp() {
             <p className={styles.greeting}>Good Morning ✨</p>
             <h1 className={styles.userName}>Jhon Smith</h1>
           </div>
-          <button className={styles.iconButton}>
+          <button className={styles.iconButton} onClick={() => navigate("/notifications")}>
             <Bell size={24} />
           </button>
         </div>
